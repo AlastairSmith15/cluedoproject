@@ -1,16 +1,12 @@
 package com.codewithAlastair;
 
 public class Main {
-
     public static void main(String[] args) {
-        Array numbers = new Array(3);
-        numbers.insert(10);
-        numbers.insert(20);
-        numbers.insert(30);
-        numbers.insert(40);
-        numbers.removeAt(5);
-        System.out.println(numbers.indexOf(10));
-        numbers.print();
-	// write your code here
+        var list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        System.out.println(list.indexOf(20));
+        System.out.println(list.contains(20));
     }
 }
